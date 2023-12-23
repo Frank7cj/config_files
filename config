@@ -1,0 +1,8 @@
+# git clone git@github-personal.com:Frank7cj/config_files.git
+Host github-personal.com
+	HostName github.com
+	Port 22
+	User your_username
+	IdentityFile ~/.ssh/id_rsa
+	# IPV4: inet, IPV6: inet6
+	AddressFamily any
