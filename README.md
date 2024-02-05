@@ -1,5 +1,7 @@
 # F | Configuration files
 
+Hey there, configuration enthusiasts! 🎉 This is my personal project, a cheerful haven for your SSH, Vim, and Oh My Zsh configurations. Say goodbye to the days of scattered files and convoluted setups – here, we're all about simplicity, smiles, and personalized awesomeness!
+
 ## ssh config
 
 > PATH: `~/.ssh/config`
