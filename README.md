@@ -23,7 +23,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
-You can automate the process by putting the command in your Vim configuration file as suggested [here](https://github.com/junegunn/vim-plug/wiki/tips#automatic-installation).
+You can automate the process by putting the command in your Vim configuration file as suggested in vim-plug Tip: [Automatic installation](https://github.com/junegunn/vim-plug/wiki/tips#automatic-installation).
 
 ### Windows (PowerShell)
 
@@ -87,3 +87,29 @@ Edit Zsh config file `vim ~/.zshrc` with the next list of plugins:
 * **python:** Adds aliases and functions for working with Python, including virtual environments.
 * **zsh-syntax-highlighting:** Enables syntax highlighting for Zsh commands, making it easier to spot errors and understand command structures.
 * **you-should-use:** Provides a set of friendly reminders or suggestions for better practices. For example, it might remind you to use a specific command or option for better efficiency.
+
+## Git Bash (Windows)
+
+### Install gsudo
+
+Open an elevated command prompt or PowerShell and run the following command:
+
+```bash
+choco install gsudo
+```
+
+### Config .bashrc
+
+To enable some alias, open your `.bashrc` file and add the following lines:
+
+```conf
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+alias python="winpty python"
+alias sudo='gsudo'
+```
+
+After saving the `.bashrc` file, run the following command in your Git Bash terminal to apply the new configuration immediately:
+
+```bash
+source ~/.bashrc
+```
