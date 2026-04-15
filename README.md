@@ -88,6 +88,43 @@ Edit Zsh config file `vim ~/.zshrc` with the next list of plugins:
 * **zsh-syntax-highlighting:** Enables syntax highlighting for Zsh commands, making it easier to spot errors and understand command structures.
 * **you-should-use:** Provides a set of friendly reminders or suggestions for better practices. For example, it might remind you to use a specific command or option for better efficiency.
 
+## Terminal Multiplexer (tmux)
+
+To run multiple terminals (panes) in a single window with Oh My Zsh, we use **tmux**.
+
+### Installation
+
+```bash
+sudo apt update && sudo apt install tmux
+```
+
+### Getting Started
+
+1. Start a new session by typing: `tmux`
+2. Your Oh My Zsh theme will load automatically inside the session.
+
+### Shortcuts
+
+All tmux commands start with the **Prefix**: `Ctrl + b`.
+
+| Action | Shortcut |
+| :--- | :--- |
+| **Split Vertically** | `Ctrl + b` then `%` |
+| **Split Horizontally** | `Ctrl + b` then `"` |
+| **Switch Panes** | `Ctrl + b` then `Arrow Keys` |
+| **Close Pane** | Type `exit` or `Ctrl + d` |
+| **Detach Session** | `Ctrl + b` then `d` (keeps everything running!) |
+
+
+### Configuration Mouse Support (Optional)
+
+If you want to customize your tmux behavior (like enabling mouse support), create a config file:
+
+```bash
+cp .tmux.conf ~/.tmux.conf
+tmux source-file ~/.tmux.conf
+```
+
 ## Git Bash (Windows)
 
 ### Install gsudo
